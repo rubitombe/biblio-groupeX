@@ -22,7 +22,12 @@ Rédigé par : @Asma-Mouhli
 | Question rapide entre membres | Un membre du groupe | Le membre qui vérifie et répond | Chat du groupe ; réponse utile reportée dans une issue ou la documentation | Courte dans le chat, durable si reportée |
 | Compte rendu de réunion | Le membre désigné pour prendre les notes | Les participants à la réunion | Fichier Markdown dans docs/reunions/ | Toute la durée du projet |
 ## 3. Règles de l'équipe
-Rédigé par : @pseudo
+Rédigé par : @rubi
 
-Format des titres d'issue, labels utilisés, qui trie, qui assigne.
+Format des titres d'issue: une description courte et précise du problème, en indiquant ce qui se passe et à quel moment
+labels utilisés: bug pour les problèmes constatés, question pour demander une clarirification sur les comportements normaux 
+qui trie: chaque personne identifie et documente les problèmes reproduits
+qui assigne: elles ne sont pas assignées
+
+
 Règle à partir de la séance 2 : aucun push direct sur main, tout passe par une pull request relue.
