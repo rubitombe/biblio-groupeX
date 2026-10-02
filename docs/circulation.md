@@ -3,10 +3,13 @@
 À compléter par le groupe en séance 1. Chaque section est rédigée et poussée par un membre différent.
 
 ## 1. Rôles
-Rédigé par : @pseudo
+Rédigé par : avrilbrngnzz-boop
 
-Qui produit les issues, qui relit les pull requests, qui décide du merge.
+Les issues sont crées par les membre de l'équipe lorsqu'un bug, une évolution ou une question est identifié par un des membre du projet 
 
+Les pull requests sont relues par un autre membre du projet avant de merge 
+
+Le merge est décidé après la relecture et la validation du pull request
 ## 2. Où circule chaque information
 Rédigé par : @pseudo
 
