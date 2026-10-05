@@ -87,18 +87,22 @@ def list_books():
         print("[%d] %s (%s) : %s" % (book[0], book[1], book[2], status))
     conn.close()
 
-
 def search_books(text):
     conn = get_connection()
     cur = conn.cursor()
-    query = "SELECT id, title, author FROM books WHERE title LIKE '%" + text + "%'"
-    cur.execute(query)
+
+    query = "SELECT id, title, author FROM books WHERE title LIKE ?"
+    cur.execute(query, (f"%{text}%",))
+
     rows = cur.fetchall()
     conn.close()
+
     if not rows:
         print("Aucun livre trouve.")
+
     for row in rows:
         print("[%d] %s (%s)" % row)
+
     return rows
 
 
