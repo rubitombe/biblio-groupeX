@@ -1,6 +1,6 @@
 # ADR 0004 : convention de nommage des branches
 
-- Statut : proposé
+- Statut : accepté
 - Date : 2026-10-05
 - Décideurs : Asma-Mouhli, rubitombe, avrilbrngnzz-boop
 
@@ -24,9 +24,7 @@ et l’issue concernés.
      le numéro de l’issue avant de créer sa branche.
 
 ## Décision
-Nous proposons d’utiliser type/numero-mots-cles pour les branches
-liées à une issue et docs/adr-numero pour les ADR.
-
+Nous utilisons le format type/numero-mots-cles pour les branches liées à une issue et docs/adr-numero pour les ADR.
 ## Conséquences
 - Les branches sont plus faciles à identifier dans GitHub Desktop.
 - Le numéro permet de retrouver l’issue concernée.
