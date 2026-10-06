@@ -2,9 +2,8 @@
 
 - Statut : proposé 
 - Date : 2026-10-05
-- Décideurs : Asma, Avril,Rubi 
+- Décideurs :  Asma-Mouhli, avrilbrngnzz-boop et rubitombe 
 
-## Contexte
 ## Contexte
 
 Biblio est une application destinée à une  bibliothèque associative. Elle doit permettre aux bénévoles de gérer simplement les livres, les membres et les emprunts.
