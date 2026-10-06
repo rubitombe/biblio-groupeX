@@ -1,6 +1,6 @@
 # ADR 0002 : SQLite plutôt qu'un serveur de base de données
 
-- Statut : proposé 
+- Statut : approuvé 
 - Date : 2026-10-05
 - Décideurs :  Asma-Mouhli, avrilbrngnzz-boop et rubitombe 
 
