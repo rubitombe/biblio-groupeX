@@ -87,18 +87,22 @@ def list_books():
         print("[%d] %s (%s) : %s" % (book[0], book[1], book[2], status))
     conn.close()
 
-
 def search_books(text):
     conn = get_connection()
     cur = conn.cursor()
-    query = "SELECT id, title, author FROM books WHERE title LIKE '%" + text + "%'"
-    cur.execute(query)
+
+    query = "SELECT id, title, author FROM books WHERE title LIKE ?"
+    cur.execute(query, (f"%{text}%",))
+
     rows = cur.fetchall()
     conn.close()
+
     if not rows:
         print("Aucun livre trouve.")
+
     for row in rows:
         print("[%d] %s (%s)" % row)
+
     return rows
 
 
@@ -110,12 +114,16 @@ def borrow_book(book_id, member_id):
         conn.close()
         print("Erreur : livre %d introuvable." % book_id)
         return False
-
-    cur.execute("SELECT id FROM members WHERE id = ?", (member_id,))
-    if cur.fetchone() is None:
+        
+    cur.execute(
+        "SELECT id FROM loans WHERE book_id = ? AND return_date IS NULL",
+        (book_id,),
+    )
+    if cur.fetchone() is not None:
         conn.close()
-        print("Erreur : membre %d introuvable." % member_id)
+        print("Erreur : livre déjà emprunté.")
         return False
+
     cur.execute(
         "INSERT INTO loans (book_id, member_id, loan_date) VALUES (?, ?, ?)",
         (book_id, member_id, date.today().isoformat()),

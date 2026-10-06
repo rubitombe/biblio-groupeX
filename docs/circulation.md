@@ -1,5 +1,4 @@
-# Circulation de l'information : groupe [nom du groupe]
-
+# Circulation de l'information : groupe biblio-groupeX
 À compléter par le groupe en séance 1. Chaque section est rédigée et poussée par un membre différent.
 
 ## 1. Rôles
