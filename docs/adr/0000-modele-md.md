@@ -1,8 +1,8 @@
 # ADR 0000 : titre de la décision
 
 - Statut : proposé | accepté | remplacé par ADR XXXX
-- Date : AAAA-MM-JJ
-- Décideurs :
+- Date : 2026-10-05
+- Décideurs : 
 
 ## Contexte
 <!-- La situation et la contrainte qui imposent de choisir. -->
