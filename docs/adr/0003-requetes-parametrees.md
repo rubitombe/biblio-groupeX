@@ -1,6 +1,6 @@
 # ADR 0000 : Requête SQL paramètres obligatoires 
 
-- Statut : proposé 
+- Statut : accepté 
 - Date : 2026-10-05
 - Décideurs : avrilbrngnzz-boop
 
